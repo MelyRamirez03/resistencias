@@ -1,0 +1,90 @@
+<div class="container">
+    <div class="row">
+        <h1 class="bg-secondary m-3 p-3">Calculadora de Resistencias</h1>
+        <h6>Hola, gracias por utilizar nuestra calculadora de resistencias. Ingresa a continuación los valores que deseas calcular:</h6>
+        <div>
+            <div id="color1" class="m-5">
+                <h5>Primer banda</h5>
+                <select class="form-select" [(ngModel)]="uno" name="uno" aria-label="Default select example">
+                    <option value="negro" id="negro">Negro</option>
+                    <option value="cafe" id="cafe">Café</option>
+                    <option value="rojo" id="rojo">Rojo</option>
+                    <option value="naranja" id="naranja">Naranja</option>
+                    <option value="amarillo" id="amarillo">Amarillo</option>
+                    <option value="verde" id="verde">Verde</option>
+                    <option value="azul" id="azul">Azul</option>
+                    <option value="violeta" id="violeta">Violeta</option>
+                    <option value="gris" id="gris">Gris</option>
+                    <option value="blanco" id="blanco">Blanco</option>
+                </select>
+            </div>
+            <div id="color2" class="m-5">
+                <h5>Segunda banda</h5>
+                <select class="form-select" [(ngModel)]="dos" name="dos">
+                    <option value="negro" id="negro">Negro</option>
+                    <option value="cafe" id="cafe">Café</option>
+                    <option value="rojo" id="rojo">Rojo</option>
+                    <option value="naranja" id="naranja">Naranja</option>
+                    <option value="amarillo" id="amarillo">Amarillo</option>
+                    <option value="verde" id="verde">Verde</option>
+                    <option value="azul" id="azul">Azul</option>
+                    <option value="violeta" id="violeta">Violeta</option>
+                    <option value="gris" id="gris">Gris</option>
+                    <option value="blanco" id="blanco">Blanco</option>
+                </select>
+            </div>
+            <div id="color3" class="m-5">
+                <h5>Tercer banda</h5>
+                <select class="form-select" [(ngModel)]="tres" name="tres" aria-label="Default select example">
+                    <option value="negro" id="negro">Negro</option>
+                    <option value="cafe" id="cafe">Café</option>
+                    <option value="rojo" id="rojo">Rojo</option>
+                    <option value="naranja" id="naranja">Naranja</option>
+                    <option value="amarillo" id="amarillo">Amarillo</option>
+                    <option value="verde" id="verde">Verde</option>
+                    <option value="azul" id="azul">Azul</option>
+                    <option value="violeta" id="violeta">Violeta</option>
+                    <option value="gris" id="gris">Gris</option>
+                    <option value="blanco" id="blanco">Blanco</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div id="ToleranciaCont">
+                <h5>Tolerancia</h5>
+                <br>
+                <input type="radio" name="tol" value="oro" [(ngModel)]="tol">Oro (5%) <br>
+                <input type="radio" name="tol" value="plata" [(ngModel)]="tol">Plata (10%) <br>
+                <button (click)="Calculo()" class="btn btn-info">Registrar</button>
+            </div>
+        </div>
+        <div id="results">
+            <h3>Cálculo</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Primer color</th>
+                        <th scope="col">Segundo color</th>
+                        <th scope="col">Tercer color</th>
+                        <th scope="col">Tolerancia</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Máximo</th>
+                        <th scope="col">Mínimo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="celda1">{{ uno }}</td>
+                        <td id="celda2">{{ dos }}</td>
+                        <td id="celda3">{{ tres }}</td>
+                        <td id="celda4">{{ tol }}</td>
+                        <td>{{ resultado }}</td>
+                        <td>{{ max }}</td>
+                        <td>{{ min }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</div>

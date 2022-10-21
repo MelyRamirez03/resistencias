@@ -1,0 +1,118 @@
+#color1{
+    position: absolute;
+    text-align: center;
+    width: 25%;
+}
+
+#color2{
+    position: absolute;
+    text-align: center;
+    width: 25%;
+    left: 550px;
+}
+
+#color3{
+    position: absolute;
+    text-align: center;
+    width: 25%;
+    right: 70px;
+}
+
+option{
+    color:rgb(184, 178, 178);
+}
+
+/*#PrimerInterface{
+    border-radius: 50px;
+    background-color: violet;
+    height: 200px;
+    width: 63%;
+}
+
+select{
+    font-size: 30px;
+}
+
+#Tol{
+    font-size: 20px;
+}*/
+
+#ToleranciaCont{
+    border-radius: 50px;
+    background-color: rgb(181, 181, 181);
+    text-align: center;
+    height: 180px;
+    width: 20%;
+    position: absolute;
+    padding: 10px;
+    left: 640px;
+    top: 310px;
+}
+
+button{
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#results{
+    background-color: rgb(224, 196, 119);
+    position: absolute;
+    text-align: center;
+    width: 800px;
+    left: 400px;
+    top: 520px;
+    border-radius: 50px;
+    width: 800px;
+    height: 200px;
+    padding: 15px;
+}
+
+h1{
+    text-align: center;
+}
+
+#negro{
+    background-color: black;
+}
+
+#cafe{
+    background-color: rgb(85, 44, 10);
+}
+
+#rojo{
+    background-color: red;
+}
+
+#naranja{
+    background-color: rgb(255, 98, 1);
+}
+
+#amarillo{
+    background-color: yellow;
+}
+
+#verde{
+    background-color: green;
+}
+
+#azul{
+    background-color: blue;
+}
+
+#violeta{
+    background-color: purple;
+}
+
+#gris{
+    background-color: grey;
+}
+
+#blanco{
+    background-color: white;
+}
+
+h6{
+    background-color: darkkhaki;
+    text-align: center;
+    padding: 10px;
+}
